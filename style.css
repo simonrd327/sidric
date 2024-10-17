@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+    width: 1200px;
+    margin: 10px auto;
+    margin-left: 20px;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+}
+
+img{
+    width: 100px;
+    float: left;
+    padding: 8px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    float: left;
+    padding: 30px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: brown;
+}
+
+.slider{
+    width: 900px;
+    height: 300px;
+    overflow: hidden;
+
+}
+.slides{
+    width:500% ;
+    height:300px;
+    display: flex;
+}
+.slides input{
+    display: none;
+
+}
+.slide{
+    width: 20%;
+    transition: 5ms;
+
+}
+.slide img{
+    width: 100%;
+    height: 300px;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px ;
+
+
+}
+.manual-btn:hover{
+    background-color:#e5e5e5 ;
+
+}
+#radio1:checked ~ .first{
+    margin-left:0 ;
+
+}
+#radio2:checked ~ .first{
+    margin-left:-20% ;
+
+}
+#radio3:checked ~ .first{
+    margin-left:-40% ;
+
+}
+#radio4:checked ~ .first{
+    margin-left:-60% ;
+
+}
+.nav-auto div{
+    border: 2px solid #e5e5e5;
+    padding: 5px;
+    border-radius:10px;
+    transition:1s ;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #e5e5e5;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #e5e5e5;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #e5e5e5;
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #e5e5e5;
+}
+
+.fondo{
+    width: 525px;
+    height: auto;
+    background-color: black;
+    margin: 10px auto;
+    margin-left: 10px;
+    clear: both;
+    content: '';
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.sect-info{
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    margin-left: 20px;
+    clear: both;
+    content: '';
+    display: flex;
+    background-color: black;
+
+
+}
+
+.eslogan{
+    width: 100%;
+    background-color: black;
+    margin-left: 10px;
+    font-family: 'New Amsterdam', sans-serif;
+}
+
+.img-slog{
+    height: 60%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.img-slog p{
+    float: right;
+    color: white;
+    font-size: 70px;
+}
+
+.desp-deport{
+    position: relative  ;
+    width: 100%;
+    margin: 10px auto;
+    margin-right: 200px;
+    clear: both;
+    content: '';
+    display: table;
+    background-color: black;
+    float: left;
+    z-index: 10;
+}
+
+.desp{
+    max-width: 1200px;
+    height: 30px;
+    background-color: black;
+    font-family: 'New Amsterdam', sans-serif;
+    padding: 4px;
+    display: block;
+    z-index: 20;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 1,0);
+}
+
+.desp li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical{
+    background-color: black;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 10px 10px 10px;
+    text-decoration: none;
+}
+
+.menu-vertical li a:hover{
+    font-size: 20px;
+}
+
+.desp li a{
+    text-decoration: none;
+    color: white;
+}
+
+.desp li a:hover{
+    color: brown;
+}
+
+.dest-produ{
+    background-color: black;
+    width: 100%;
+    margin-top: 70px;
+    height: 500px;
+}
+
+.dest-produ p{
+    font-family: 'New Amsterdam', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.caja-int{
+    display: flex;
+    max-width: 1400px;
+}
+
+
+.scroll{
+    margin: 10px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.scroll img{
+    margin: 30px 30px 30px 30px;
+}
+
+
+.scroll:hover{
+    width: 300px;
+}
+
+.scroll h3{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.scroll p{
+    margin-top: 30px;
+    color: black;
+    margin-left: 30px;
+}
+
+.scroll button{
+    margin-left: 5px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.scroll a{
+    text-decoration: none;
+    color: black;
+    font-family: 'New Amsterdam', sans-serif;
+}
+
+.scroll button:hover{
+    background-color: blue;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    font-family: 'New Amsterdam', sans-serif;
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social,
+.footer-subscribe {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.footer h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #c9c9c9;
+}
+
+.footer-about p:last-of-type {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #c9c9c9;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: blue;
+}
+
+.footer-subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.footer-subscribe button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.footer-subscribe button:hover {
+    background-color: blue;
+}
+
+/*@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}*/
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 18px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.info-src{
+    margin-bottom: -10px;
+    border: 2px solid black;
+}
+
+.carousel-container h1{
+    font-family: 'New Amsterdam', sans-serif;
+
+}
+
+.present{
+    background-color: beige;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.slog-pre{
+    margin: 30px;
+}
+
+.present p{
+    margin: 30px;
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.t-art{
+    background-color: rgb(8, 8, 100);
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+}
+
+.t-art img{
+    width: 500px;
+    float: right;
+    z-index: 10;
+    margin-left: 10px;
+}
+
+.t-art p{
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 70px;
+    margin-left: -100px;
+    color: white;
+    z-index: 20;
+    text-shadow:  2px 10px 5px rgba(233, 224, 224, 0.5);
+    margin-top: 10px;
+}
+
+.t-art h6{
+    float: right;
+    text-align: center;
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 100px;
+    margin-left: -150px;
+}
+
+.t-art button{
+    width: 90px;
+    
+
+}
+
+.t-art button:hover{
+    background-color: red;
+}
+
+.b-art{
+    background-color: black;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    margin-right: 20px;
+}
+
+.imgb{
+    width: 500px;
+    margin-left: -50px;
+    z-index: 10;
+}
+
+.b-art p{
+    font-family:  'New Amsterdam', sans-serif;
+    font-size: 70px;
+    color: white;
+    z-index: 20;
+    margin-left: -90px;
+    text-shadow:  2px 10px 5px rgba(233, 224, 224, 0.5);
+}
+
+.b-art h6{
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.b-art button{
+    width: 90px;
+}
+
+.b-art button:hover{
+    background-color: white;
+}
+
+.k_art{
+    background-color: rgb(172, 14, 14);
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    margin-left: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.k_art img{
+    width: 500px;
+    float: right;
+    z-index: 10;
+    margin-left: 10px;
+}
+
+.k_art p{
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 70px;
+    margin-left: -100px;
+    color: white;
+    z-index: 20;
+    text-shadow:  2px 10px 5px rgba(233, 224, 224, 0.5);
+    margin-top: 10px;
+    transition: opacity 0.5s ease;
+}
+.k_art:hover .p{
+    opacity: 1;
+}
+.k_art h6{
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: -30px;
+}
+
+.k_art button{
+    width: 90px;
+}
+
+  
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles_tkd.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png">
+        <h1>Catálogo de Productos</h1>
+        <button id="cart-btn">Ver Carrito (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <section class="products">
+        <div class="product-card" data-id="1">
+            <img src="empeineras.jpg" alt="Producto 1">
+            <h2>Empeineras Gen 2</h2>
+            <p>Precio: $340.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product-card" data-id="2">
+            <img src="Canilleras-tkd.jpg" alt="Producto 2">
+            <h2>Canilleras Deado</h2>
+            <p>Precio: $94.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product-card" data-id="3">
+            <img src="doomie.jpg" alt="Producto 3">
+            <h2>Doomie de Pateo</h2>
+            <p>Precio: $450.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-id="4">
+            <img src="uniform_tk.jpg" alt="Producto 4">
+            <h2>Uniforme de Combate</h2>
+            <p>Precio: $150.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-id="5">
+            <img src="gaun_tk.jpg" alt="Producto 4">
+            <h2>Guantes Taekwondo</h2>
+            <p>Precio: $100.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-id="6">
+            <img src="brazales.jpg" alt="Producto 3">
+            <h2>Brazales</h2>
+            <p>Precio: $80.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-card" data-id="7">
+            <img src="peto.jpg" alt="Producto 1">
+            <h2>Peto Adidas</h2>
+            <p>Precio: $180.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product-card" data-id="8">
+            <img src="casco_tkd.jpg" alt="Producto 2">
+            <h2>Casco Taekwondo</h2>
+            <p>Precio: $100.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product-card" data-id="9">
+            <img src="poom.jpg" alt="Producto 3">
+            <h2>Poomsae Uniforme</h2>
+            <p>Precio: $300.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-id="10">
+            <img src="ZAPAS.jpg" alt="Producto 3">
+            <h2>Zapatillas Nike</h2>
+            <p>Precio: $250.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-id="11">
+            <img src="bucal-box.jpg" alt="Producto 3">
+            <h2>Bucal Convencional</h2>
+            <p>Precio: $20.000 COP</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="product-card" data-id="3">
+            <img src="porta.png" alt="Producto 3">
+            <h2>Porta Medallas</h2>
+            <p>Precio: $180.000 COP </p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <a href="file:///C:/Users/FAMILIA%20R.C/Downloads/Final_Proy/index.html"><button class="back">Volver</button></a>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+            <button id="checkout-btn">Comprar</button>
+            <button id="close-cart">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="scripts_tkd.js"></script>
+</body>
+</html>
